@@ -9,19 +9,33 @@
 </head>
 <body>
   <div id="wrap">
-    <div class="fl-l w200"><img src="" alt="logo" width="100"></div>
+
+<div class="hide">
+    <div class="fl-l w200"><img src="" alt="logo" width="100" id="test" class="logos"></div>
     <p class="fl-l w200">text<span>&gt;</span></p>
     <div class="fl-r w200"><a>select</a></div>
+</div>
 
-    <div class="fl-l w200"><img src="aaa.jpg" alt="logo" width="100"></div>
+<div class="hide">
+    <div class="fl-l w200"><img src="" alt="logo" width="100" class="logos"></div>
     <p class="fl-l w200">text<span>&gt;</span></p>
     <div class="fl-r w200"><a>select</a></div>
   </div>
+</div>
+
 <script>
-var recieve = JSON.stringify({img:"aaa",img2:"bbb"});
+var recieve = JSON.stringify({img:"aaa",region:{img02:"bbb"}});
 var obj = $.parseJSON(recieve);
-console.log(obj);
-console.log(typeof obj);
+console.log(obj.region.img02);
+/*console.log(obj.img,obj.img2);*/
+var logoName = obj.img;
+var imgList = $('.logos');
+//戻り値があればコンテンツ追加
+if (obj) {
+
+}else{//戻り値なければエラー画面へ遷移
+
+}
 </script>
 </body>
 </html>

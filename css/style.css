@@ -1,1 +1,29 @@
 @charset "utf-8";
+body{
+  box-sizing: border-box;
+  background-color: #e5e5e5;
+}
+#wrap{
+  width: 960px;
+  margin: 0 auto;
+  padding: 100px 0;
+  background-color: #fff;
+  margin-top: 100px;
+  overflow: hidden;
+}
+@media screen and (max-width:640px) {
+  #wrap{
+    width: 100%;
+  }
+}
+.fl-l{
+  float: left;
+}
+.fl-r{
+  float: right;
+}
+.w200{
+  width: 33%;
+  background-color: #f0f0f0;
+  height: 3em;
+}

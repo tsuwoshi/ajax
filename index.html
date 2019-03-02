@@ -5,13 +5,23 @@
 <title>ajaxのテスト</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
 <link rel="stylesheet" href="css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-  <h1>ajaxのテスト</h1>
-  <div>
-    <img src="" alt="logo">
-    <p>text<span>&gtl;</span></p>
-    <div><a>select</a></div>
+  <div id="wrap">
+    <div class="fl-l w200"><img src="" alt="logo" width="100"></div>
+    <p class="fl-l w200">text<span>&gt;</span></p>
+    <div class="fl-r w200"><a>select</a></div>
+
+    <div class="fl-l w200"><img src="aaa.jpg" alt="logo" width="100"></div>
+    <p class="fl-l w200">text<span>&gt;</span></p>
+    <div class="fl-r w200"><a>select</a></div>
   </div>
+<script>
+var recieve = JSON.stringify({img:"aaa",img2:"bbb"});
+var obj = $.parseJSON(recieve);
+console.log(obj);
+console.log(typeof obj);
+</script>
 </body>
 </html>

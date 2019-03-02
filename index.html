@@ -6,38 +6,25 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
 <link rel="stylesheet" href="css/style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="script.js" async></script>
 </head>
 <body>
   <div id="wrap">
 
 <div class="hide">
-    <div class="fl-l w33"><img src="a" alt="logo" width="100" id="test" class="logos"></div>
+    <div class="fl-l w33"><img src="" alt="logo" width="100" id="test" class="logos"></div>
     <p class="fl-l w33">text<span>&gt;</span></p>
     <div class="fl-r w33"><a>select</a></div>
 </div>
 
 <div class="hide">
-    <div class="fl-l w33"><img src="d" alt="logo" width="100" class="logos"></div>
+    <div class="fl-l w33"><img src="" alt="logo" width="100" class="logos"></div>
     <p class="fl-l w33">text<span>&gt;</span></p>
     <div class="fl-r w33"><a>select</a></div>
   </div>
 </div>
 
-<script>
-var recieve = JSON.stringify({img:"aaa",region:{img02:"bbb"}});
-var obj = $.parseJSON(recieve);
-var logoName = obj.region.img02;
-//console.log(logoName);
-var imgList = $('.logos');
-//戻り値があればコンテンツ追加
-if (obj) {
-  //console.log(imgList[0],imgList[1]);
-  for (var i = 0; i < imgList.length; i++) {
-    console.log(imgList[i].src);
-  }
-}else{//戻り値なければエラー画面へ遷移
+<input type="button" onclick="ajax()" value="ajax">
 
-}
-</script>
 </body>
 </html>

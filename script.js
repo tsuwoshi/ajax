@@ -7,7 +7,7 @@ var after = ".jpg";
 var container = $('#wrap');
 //戻り値があればコンテンツ追加
 if (obj) {
-  sessionStorage.logoName = recieve;
+  sessionStorage.logoName = recieve; //Storageに保存
   for (var i = 0; i < imgList.length; i++) {
     imgList[i].src =logoName+after;
     console.log(imgList[i].src);
@@ -19,8 +19,8 @@ if (obj) {
 
 }
 }
-//モーダル内src書き換え
+//モーダル内src書き換え ajax関数内に書く
 $('.logos').on("click",function(){
   var refSrc = $(this).attr('src');
-  $('#modal img').attr('src',refSrc);
+  $('#modal img').attr('src',refSrc);//logoかiconかを確認しておく
 });

@@ -27,6 +27,10 @@ body{
   background-color: #f0f0f0;
   height: 3em;
 }
+
+.f3{
+  flex: 3;
+}
 .hide{
   display: none;
 }

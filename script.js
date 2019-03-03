@@ -19,3 +19,8 @@ if (obj) {
 
 }
 }
+//モーダル内src書き換え
+$('.logos').on("click",function(){
+  var refSrc = $(this).attr('src');
+  $('#modal img').attr('src',refSrc);
+});

@@ -22,3 +22,4 @@ $('.logos').on("click",function(){
   var refSrc = $(this).attr('src');
   $('#modal img').attr('src',refSrc);//logoかiconかを確認しておく
 });
+var h = '<div class="message-box">'+'aaa'+'</div>';

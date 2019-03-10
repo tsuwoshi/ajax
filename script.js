@@ -23,3 +23,7 @@ $('.logos').on("click",function(){
   $('#modal img').attr('src',refSrc);//logoかiconかを確認しておく
 });
 var h = '<div class="message-box">'+'aaa'+'</div>';
+for(let item of imgList){
+  var h = 'a'+item+'b';
+  document.create(h);
+}

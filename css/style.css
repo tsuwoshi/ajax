@@ -34,3 +34,31 @@ body{
 .hide{
   display: none;
 }
+#check{
+  display: none;
+}
+#check +label:before{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #e0e0e0;
+  vertical-align: middle;
+  position: relative;
+  left: -5px;
+  content: "";
+}
+input#check[type="checkbox"]:checked +label::before{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #00f;
+  vertical-align: middle;
+  position: relative;
+  left: -5px;
+  content: "\2714";
+  color: blue;
+}
+#container_check{
+  width: 450px;
+  margin: 0 auto;
+}

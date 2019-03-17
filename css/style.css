@@ -56,6 +56,8 @@ input#check[type="checkbox"]:checked +label::before{
   position: relative;
   left: -5px;
   content: "\2714";
+  /*content: "\9675";*/
+  /*content: "\025cf"*/
   color: blue;
 }
 #container_check{
